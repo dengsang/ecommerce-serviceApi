@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  db:
+    image: postgres:10.3-alpine
+    env_file: .env
+    volumes:
+      - db_data:/var/lib/postgresql/data/pgdata
+
+  web:
+    build:
+      context: src
+    env_file: .env
