@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  db:
+    extends:
+      file: base.yml
+      service: db
+
+  web:
+    extends:
+      file: base.yml
+      service: web
+    volumes:
+      - ./src:/src
+    ports:
+      - "80:8000"
+    depends_on:
+      - db
+    command: ["./wait-for-it.sh", "db:5432", "--", "python", "app.py", "dev"]
+
+volumes:
+  db_data:
+    external: true
