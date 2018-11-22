@@ -1,0 +1,41 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+alembic = "==1.0.2"
+"aniso8601" = "==4.0.1"
+"asn1crypto" = "==0.24.0"
+bcrypt = "==3.1.4"
+blinker = "==1.4"
+cffi = "==1.11.5"
+click = "==7.0"
+coverage = "==4.5.1"
+cryptography = "==2.3.1"
+flask = "==1.0.2"
+flask-bcrypt = "==0.7.1"
+flask-mail = "==0.9.1"
+flask-migrate = "==2.3.0"
+flask-restplus = "==0.12.1"
+flask-script = "==2.0.6"
+flask-sqlalchemy = "==2.3.2"
+idna = "==2.7"
+itsdangerous = "==1.1.0"
+"jinja2" = "==2.10"
+jsonschema = "==2.6.0"
+jwt = "==0.5.4"
+mako = "==1.0.7"
+markupsafe = "==1.0"
+pycparser = "==2.19"
+python-dateutil = "==2.7.5"
+python-editor = "==1.0.3"
+pytz = "==2018.7"
+six = "==1.11.0"
+sqlalchemy = "==1.2.13"
+werkzeug = "==0.14.1"
+
+[requires]
+python_version = "3.6"
